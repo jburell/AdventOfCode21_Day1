@@ -32,6 +32,6 @@ fn part_2_count_number_of_increases_in_sliding_window() {
   let actual = count_number_of_increases_in_sliding_window(values);
 
   // Assert
-  assert_eq!(1728, actual);
-  println!("Answer 2: {}", actual)
+  assert_eq!(Ok(1728), actual);
+  println!("Answer 2: {}", actual.unwrap())
 }   
